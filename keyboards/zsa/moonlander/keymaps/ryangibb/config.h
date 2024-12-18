@@ -1,0 +1,9 @@
+#pragma once
+
+#define ORYX_CONFIGURATOR
+#define MOONLANDER_USER_LEDS
+#define USB_SUSPEND_WAKEUP_DELAY 0
+#define CAPS_LOCK_STATUS
+#define LAYER_STATE_8BIT
+
+#define TAPPING_TERM 200
