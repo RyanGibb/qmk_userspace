@@ -61,10 +61,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   // board
   [5] = LAYOUT_moonlander(
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       _______,        DT_PRNT,        XXXXXXX,        RGB_SAD,        RGB_SAI,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        DT_UP,          RGB_MOD,        RGB_SPD,        RGB_SPI,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        AC_ON,          AC_OFF,         AC_TOGG,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        DT_DOWN,        RGB_TOG,        RGB_VAD,        RGB_VAI,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       XXXXXXX,    TOGGLE_LAYER_COLOR, RGB_HUD,        RGB_HUI,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       _______,        XXXXXXX,        XXXXXXX,        RGB_SAD,        RGB_SAI,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        RGB_MOD,        RGB_SPD,        RGB_SPI,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        AC_OFF,         AC_ON,          XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        RGB_TOG,        RGB_VAD,        RGB_VAI,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        DT_DOWN,        DT_UP,          DT_PRNT,                                                       XXXXXXX,    TOGGLE_LAYER_COLOR, RGB_HUD,        RGB_HUI,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        QK_BOOT,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
@@ -188,10 +188,10 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
   [5] = {
     OFF,            OFF,            OFF,            OFF,            OFF,
     OFF,            OFF,            OFF,            OFF,            OFF,
-    OFF,            OFF,            BASE_COLOUR,    OFF,            OFF,
-    OFF,            OFF,            BASE_COLOUR,    OFF,            OFF,
-    OFF,            OFF,            BASE_COLOUR,    OFF,            OFF,
-    OFF,            OFF,            OFF,            OFF,
+    OFF,            OFF,            OFF,            OFF,            OFF,
+    OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,    OFF,
+    OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,    OFF,
+    OFF,            OFF,            OFF,            BASE_COLOUR,
     OFF,            OFF,            OFF,
     OFF,            OFF,            OFF,            OFF,
 
@@ -200,7 +200,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    OFF,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    OFF,
     OFF,            BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    OFF,
-    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    OFF,
+    OFF,            OFF,            OFF,            OFF,
     RED,            OFF,            OFF,
     OFF,            OFF,            OFF,            OFF,
   },
