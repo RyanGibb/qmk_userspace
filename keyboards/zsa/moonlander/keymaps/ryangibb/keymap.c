@@ -16,9 +16,9 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // base
   [0] = LAYOUT_moonlander(
-    KC_MINUS,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           TG(3),                         KC_CAPS_LOCK,   KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_EQUAL,
-    KC_LBRC,        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(2),                         TG(5),          KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_RBRC,
-    UK_GRV,         KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           TG(1),                         TG(4),          KC_H,           KC_J,           KC_K,           KC_L,           KC_SEMICOLON,   UK_QUOT,
+    KC_MINUS,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           TG(3),                         TG(5),          KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_EQUAL,
+    KC_LBRC,        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(2),                         TG(4),          KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_RBRC,
+    UK_GRV,         KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           XXXXXXX,                       XXXXXXX,        KC_H,           KC_J,           KC_K,           KC_L,           KC_SEMICOLON,   UK_QUOT,
     UK_BSLS,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLSH,        UK_HASH,
     KC_RALT,        KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,                        KC_ESC,                        KC_DEL,                         KC_RSFT,        KC_RCTL,        KC_LALT,        KC_RGUI,        KC_RALT,
                                                                     KC_SPC,         MO(1),          KC_TAB,                        KC_ENT,         MO(1),          KC_BSPC
@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     XXXXXXX,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          XXXXXXX,                       XXXXXXX,        KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,
     XXXXXXX,        XXXXXXX,        KC_PAUS,        KC_SCRL,        KC_INS,         XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_PGDN,        KC_PGUP,        XXXXXXX,        KC_PSCR,        KC_F12,
     XXXXXXX,        XXXXXXX,        KC_MUTE,        KC_VOLD,        KC_VOLU,        XXXXXXX,        _______,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       CW_TOGG,        XXXXXXX,
-    XXXXXXX,        KC_MSTP,        KC_MPLY,        KC_MPRV,        KC_MNXT,        XXXXXXX,                                                       XXXXXXX,        KC_HOME,        KC_END,         KC_APP,         XXXXXXX,        XXXXXXX,
+    XXXXXXX,        KC_MSTP,        KC_MPLY,        KC_MPRV,        KC_MNXT,        XXXXXXX,                                                       XXXXXXX,        KC_HOME,        KC_END,         KC_APP,         KC_CAPS_LOCK,   XXXXXXX,
     _______,        _______,        _______,        _______,        _______,                        XXXXXXX,                       XXXXXXX,                        _______,        _______,        _______,        _______,        _______,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
@@ -61,8 +61,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   // board
   [5] = LAYOUT_moonlander(
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        DT_PRNT,        XXXXXXX,        RGB_SAD,        RGB_SAI,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       _______,        DT_UP,          RGB_MOD,        RGB_SPD,        RGB_SPI,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       _______,        DT_PRNT,        XXXXXXX,        RGB_SAD,        RGB_SAI,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        DT_UP,          RGB_MOD,        RGB_SPD,        RGB_SPI,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        AC_ON,          AC_OFF,         AC_TOGG,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        DT_DOWN,        RGB_TOG,        RGB_VAD,        RGB_VAI,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       XXXXXXX,    TOGGLE_LAYER_COLOR, RGB_HUD,        RGB_HUI,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        _______,        _______,        _______,        _______,                        XXXXXXX,                       XXXXXXX,                        _______,        _______,        _______,        _______,        QK_BOOT,
@@ -114,8 +114,8 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
-    BASE_COLOUR,    BASE_COLOUR,    RED,
-    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
+    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
+    BASE_COLOUR,    RED,            BASE_COLOUR,    BASE_COLOUR,
 
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
@@ -124,7 +124,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
-    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
+    BASE_COLOUR,    RED,            BASE_COLOUR,    BASE_COLOUR,
   },
   [2] = {
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
@@ -180,7 +180,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
-    BASE_COLOUR,    BASE_COLOUR,    RED,
+    BASE_COLOUR,    RED,            BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
   },
   [5] = {
@@ -199,7 +199,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
-    BASE_COLOUR,    RED,            BASE_COLOUR,
+    RED,            BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
   },
 };
