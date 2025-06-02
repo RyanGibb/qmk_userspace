@@ -45,10 +45,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [3] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_MS_L,        KC_MS_D,        KC_MS_U,        KC_MS_R,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        KC_BTN1,        KC_BTN3,        KC_BTN1,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_MS_L,        KC_MS_D,        KC_MS_U,        KC_MS_R,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        _______,        _______,        _______,        _______,        XXXXXXX,                                                       KC_WH_L,        KC_WH_D,        KC_WH_U,        KC_WH_R,        XXXXXXX,        XXXXXXX,
     _______,        _______,        _______,        _______,        _______,                        _______,                       _______,                        _______,        _______,        _______,        _______,        _______,
-                                                                    KC_BTN1,        KC_BTN2,        KC_BTN3,                       KC_BTN3,        KC_BTN2,        KC_BTN1
+                                                                    _______,        _______,        _______,                       _______,        _______,        _______
   ),
   // game
   [4] = LAYOUT_moonlander(
@@ -150,9 +150,9 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
   [3] = {
     OFF,            OFF,            OFF,            OFF,            BASE_COLOUR,
     OFF,            OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,
-    OFF,            OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,
-    OFF,            OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,
-    OFF,            OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,
+    OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
+    OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
+    OFF,            OFF,            BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     OFF,            OFF,            OFF,            OFF,
     RED,            OFF,            OFF,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
