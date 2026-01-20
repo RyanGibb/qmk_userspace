@@ -1,5 +1,4 @@
 #include QMK_KEYBOARD_H
-#include "version.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // base
@@ -57,13 +56,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
 };
-
-// const uint16_t PROGMEM board_layer[] = {TG(2), TG(3), COMBO_END};
-// const uint16_t PROGMEM game_layer[]  = {TG(1), TG(2), COMBO_END};
-// combo_t key_combos[] = {
-//     COMBO(game_layer,  TG(4)),
-//     COMBO(board_layer, TG(5)),
-// };
 
 extern rgb_config_t rgb_matrix_config;
 
