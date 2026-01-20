@@ -1,6 +1,5 @@
 #pragma once
 
-#define ORYX_CONFIGURATOR
 #define MOONLANDER_USER_LEDS
 #define USB_SUSPEND_WAKEUP_DELAY 0
 #define CAPS_LOCK_STATUS
