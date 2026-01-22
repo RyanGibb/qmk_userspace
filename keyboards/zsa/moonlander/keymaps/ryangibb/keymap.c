@@ -49,6 +49,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         _______, _______, _______,         _______, _______, _______
   ),
   // steno (GeminiPR)
+  // Standard stenography layout:
+  //
+  //   #  #  #  #  #  #        #  #  #  #  #  #
+  //      S  T  P  H  *        *  F  P  L  T  D
+  //      S  K  W  R  *        *  R  B  G  S  Z
+  //            A  O              E  U
+  //
+  // Where:
+  //   # = Number bar (1-9, 0, A-C in GeminiPR)
+  //   S = Left/Right S (two separate keys)
+  //   * = Star keys (4 positions, can be chorded)
+  //   A O E U = Vowels (thumb keys)
+  //   Consonants are chorded to form words
   [5] = LAYOUT_moonlander(
     STN_N1,  STN_N2,  STN_N3,  STN_N4,  STN_N5,  STN_N6,  XXXXXXX,         XXXXXXX, STN_N7,  STN_N8,  STN_N9,  STN_NA,  STN_NB,  STN_NC,
     XXXXXXX, STN_S1,  STN_TL,  STN_PL,  STN_HL,  STN_ST1, XXXXXXX,         _______, STN_ST3, STN_FR,  STN_PR,  STN_LR,  STN_TR,  STN_DR,
