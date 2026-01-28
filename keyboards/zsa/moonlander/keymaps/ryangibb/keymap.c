@@ -212,6 +212,15 @@ bool rgb_matrix_indicators_user(void) {
   if (layer < 7) {
     set_layer_color(layer);
   }
+
+  // Caps lock indicator on the caps key (layer 1, right hand row 3, column 4)
+  if (host_keyboard_led_state().caps_lock && (layer == 0 || layer == 1)) {
+    uint8_t led_index = g_led_config.matrix_co[9][5];  // Right hand row 3, KC_CAPS position
+    if (led_index != NO_LED) {
+      rgb_matrix_set_color(led_index, RGB_RED);
+    }
+  }
+
   return true;
 }
 
